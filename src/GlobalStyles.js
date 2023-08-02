@@ -1,6 +1,7 @@
-@import 'normalize.css';
- /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
+export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,29 +9,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  background-color: #dbdede;
-  background-image: linear-gradient(
-      rgba(82, 83, 98, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(./images/background.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-}
+  background-color:  #fed395;
 
-body::-webkit-scrollbar {
-    display: none;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 h1,
 h2,
 h3,
@@ -40,24 +25,14 @@ h6,
 p {
   margin: 0;
 }
-
 ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
+}`;
