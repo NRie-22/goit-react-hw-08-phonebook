@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const HomeText = styled.h1`
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
   text-align: center;
   margin: auto;
-  color: #4fc41c;
-
-  
+  color: #f3f6f4;
   animation-name: slidein;
 
   @keyframes slidein {

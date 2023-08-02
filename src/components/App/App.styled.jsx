@@ -9,7 +9,6 @@ export const Container = styled.div`
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: minmax(100px, auto);
     column-gap: 20px;
-
     padding: 24px;
   }
 
@@ -20,7 +19,6 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   margin-bottom: 20px;
-
   font-weight: 900;
   font-size: 40px;
   text-align: center;
